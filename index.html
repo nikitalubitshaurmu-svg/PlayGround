@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#071322" />
+    <meta name="description" content="Неоновый город, свободный полёт и паутина. Твоя ночь — твой город." />
+    <title>WEB RUNNER — город ждёт</title>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div class="vignette"></div>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Web Runner"><span class="brand-mark">W</span><span>WEB<span class="brand-accent">RUNNER</span><small>НЬЮ-ЙОРК · 02:17 AM</small></span></a>
+      <div class="top-center"><span class="live-dot"></span> СИГНАЛ СТАБИЛЕН <i></i> <span id="weather">НОЧНОЙ ПАТРУЛЬ</span></div>
+      <div class="top-right"><span class="level-chip">УР. 04</span><span class="avatar-mini">✦</span></div>
+    </header>
+
+    <section class="mission-panel">
+      <div class="panel-kicker"><span class="target-dot">◉</span> АКТИВНОЕ ЗАДАНИЕ <span class="mission-count" id="mission-count">01 / 03</span></div>
+      <h1 id="mission-title">Проблемы в Ист-Сайде</h1>
+      <p id="mission-copy">Доберись до сигнала и обезвредь угрозу.</p>
+      <div class="mission-progress"><span id="progress-fill"></span></div>
+      <div class="mission-footer"><span>НАГРАДА</span><strong>+ 250 XP</strong><span class="distance" id="distance">1.2 КМ</span></div>
+    </section>
+
+    <div class="right-rail">
+      <div class="minimap-frame"><div class="map-label">РАЙОН <b>МИДТАУН</b></div><div class="minimap" id="minimap"><span class="map-grid"></span><span class="map-road"></span><span class="map-player">▲</span><span class="map-target">◆</span></div><div class="map-coords">40°45' N&nbsp; 73°58' W</div></div>
+      <div class="speed-card"><div class="speed-label">СКОРОСТЬ</div><div class="speed-value"><span id="speed">0</span><small>КМ/Ч</small></div><div class="speed-meter"><i id="speed-meter"></i></div></div>
+    </div>
+
+    <div class="bottom-left"><span class="keycap">W</span><span class="keycap">A</span><span class="keycap">S</span><span class="keycap">D</span><span class="control-caption">ДВИЖЕНИЕ</span><span class="keycap action-key">SPACE</span><span class="control-caption">ПРЫЖОК</span><span class="keycap action-key">E</span><span class="control-caption">ПАУТИНА</span></div>
+    <div class="toast" id="toast"></div>
+    <div class="center-prompt" id="center-prompt"><span class="prompt-ring">E</span><span>ПЕРЕХВАТИТЬ СИГНАЛ</span></div>
+
+    <div class="mobile-controls" aria-label="Игровое управление">
+      <div class="joystick" id="joystick"><div class="joy-knob" id="joy-knob"></div></div>
+      <div class="mobile-actions"><button class="touch-button jump-button" id="jump-touch"><span>↑</span><small>ПРЫЖОК</small></button><button class="touch-button web-button" id="web-touch"><span>✳</span><small>ПАУТИНА</small></button></div>
+    </div>
+    <div class="crosshair"><span></span></div>
+    <div class="loading" id="loading"><div class="loading-mark">W</div><div>ГОРОД ПРОСЫПАЕТСЯ</div><span class="loading-line"><i></i></span></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
